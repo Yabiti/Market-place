@@ -5,3 +5,4 @@ def index(request):
     return render(request, 'sell/index.html')
 
 def contact(request):
+    return render(request, 'sell/contact.html')
