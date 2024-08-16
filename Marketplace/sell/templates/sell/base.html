@@ -1,12 +1,12 @@
 {% extends 'sell/base.html' %}
-{% loadstatic %}
+{% load static %}
 {% block content %}
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=width-width, initial-scale=1.0">
     </head>
     <title>{% block title %}{% endblock %} | sell</title>
-    <link href="{% static 'sell/base.css' %}" rel="stylesheet">
+    <link href="{% static 'base.css' %}" rel="stylesheet">
     <body>
         <nav class="py-6 px-6 flex justify-between items-center border-b border-gray-200">
             <a href="/" class="text-xl font-semibold">puddle</a>
