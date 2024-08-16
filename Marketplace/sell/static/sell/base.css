@@ -20,4 +20,5 @@ p{
 
 #coll{
     direction: rtl;
+    display: flex;
 }
