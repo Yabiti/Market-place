@@ -8,3 +8,16 @@
 html{
     scroll-behavior: smooth;
 }
+
+p{
+    font-size: larger;
+    padding: 90ox;
+}
+
+.high{
+    font-size: larger;
+}
+
+#coll{
+    direction: rtl;
+}
