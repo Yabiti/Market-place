@@ -9,7 +9,6 @@ html{
     scroll-behavior: smooth;
 }
 
-.high{
-    justify-items: center;
-    padding-left: 90px;
+#coll{
+    padding-left: 100px; 
 }
