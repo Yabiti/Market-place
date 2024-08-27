@@ -16,12 +16,14 @@ p{
 
 .high{
     font-size: larger;
+    font-weight: bold;
 }
 
 #coll{
     direction: rtl;
     justify-items: auto;
-    display: flex;
     justify-content: space-between;
     margin: 0 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
