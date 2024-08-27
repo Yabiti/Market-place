@@ -19,7 +19,6 @@ p{
 }
 
 #coll{
-    direction: rtl;
     justify-items: auto;
     margin: 0 20px;
 }
