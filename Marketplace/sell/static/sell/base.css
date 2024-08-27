@@ -19,6 +19,9 @@ p{
 }
 
 #coll{
+    direction: rtl;
     justify-items: auto;
-    margin: 0 20px;
+    display: block;
+    justify-content: space-between;
+    margin: 0 30px;
 }
