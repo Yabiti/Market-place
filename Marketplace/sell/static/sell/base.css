@@ -33,3 +33,12 @@ footer{
     background-color: rgb(13, 13, 26);
     padding: 30px;
 }
+
+#contact{
+    direction: rtl;
+    justify-items: auto;
+    justify-content: space-between;
+    margin: 0 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
