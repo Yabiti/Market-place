@@ -34,3 +34,13 @@ footer{
     padding: 30px;
     color: aliceblue;
 }
+
+.cont{
+    direction: rtl;
+}
+
+.di{
+    direction: rtl;
+    padding: 10px;
+    margin: 0 20px;
+}
