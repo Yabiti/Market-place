@@ -32,8 +32,10 @@ p{
 footer{
     background-color: rgb(13, 13, 26);
     padding: 30px;
+    color: aliceblue;
 }
 
 .cont{
     direction: rtl;
 }
+
