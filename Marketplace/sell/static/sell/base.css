@@ -20,5 +20,7 @@ p{
 
 #coll{
     direction: rtl;
-    display: flex;
+    justify-items: auto;
+    margin: 0 20px;
+    padding: 100px;
 }
