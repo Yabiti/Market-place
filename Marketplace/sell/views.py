@@ -5,7 +5,7 @@ from . import Category, Item
 def index(request):
     items = Item.objects.filter(is_sild=False)[0:6]
     Categories = Category.objects.all()
-    return render(request, 'sell/index.html'{
+    return render(request, 'sell/index.html',{
         'Categories': Categories,
         'items': items
     })
