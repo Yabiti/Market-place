@@ -17,3 +17,4 @@ class Item(models.Model):
     description = models.TextField(blank=True, null=True)
     price = models.FloatField()
     is_sold = models.BooleanField(default=False)
+    created_at = 
