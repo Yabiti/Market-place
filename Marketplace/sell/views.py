@@ -6,7 +6,8 @@ def index(request):
     items = Item.objects.filter(is_sild=False)[0:6]
     Categories = Category.objects.all()
     return render(request, 'sell/index.html'{
-        'Categories': Categories
+        'Categories': Categories,
+        'items': items
     })
 
 def contact(request):
