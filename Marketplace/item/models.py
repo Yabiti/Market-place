@@ -17,4 +17,5 @@ class Item(models.Model):
     description = models.TextField(blank=True, null=True)
     price = models.FloatField()
     is_sold = models.BooleanField(default=False)
+    created_by = models.ForeignKey(user, related_name='items', on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now=True)
