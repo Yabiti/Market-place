@@ -14,7 +14,7 @@ class Category(models.Model):
         return self.name
 
 class Item(models.Model):
-    Category = models.ForeignKey(Category, related_name='items')
+    Category = models.ForeignKey(Category, related_name='items', on_delete=models.CASCADE)
     name = models.CharField(max_length=255)
     description = models.TextField(blank=True, null=True)
     price = models.FloatField()
