@@ -5,4 +5,5 @@ class Category(models.Model):
     name = models.CharField(max_length=255)
 
 
-    class Meta =
+    class Meta:
+        verbose_name_plural = 'categories'
