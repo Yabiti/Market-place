@@ -56,14 +56,9 @@ footer{
 .items{
     margin: auto;
     border: 1px solid #ccc;
-    display: flexbox;
+    display: flex;
 }
 img{
     max-width: 100%;
 }
 
-
-.lol{
-    display: block;
-    align-items: center;
-}
