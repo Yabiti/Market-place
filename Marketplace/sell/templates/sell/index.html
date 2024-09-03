@@ -22,15 +22,15 @@
         </div>
         <div class="items">
             {% for item in items %}
-            <div class="ill">
+            <div class=>
                 <a href="/">
-                    <div>
-                        <img src="{{ item.image.url }}">
-                    </div>
-                    <div>
-                        <h2>{{ item.title }}</h2>
-                        <p>price: {{ item.price }}</p>
-                    </div>
+                <div>
+                    <img src="{{ item.image.url }}">
+                </div>
+                <div>
+                    <h2 style="display: flex;">{{ item.name }}</h2>
+                    <p style="display: flex;">price: {{ item.price }}</p>
+                </div>
                 </a>
             </div>
         </div>
