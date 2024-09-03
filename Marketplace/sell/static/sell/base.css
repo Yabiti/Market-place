@@ -53,6 +53,6 @@ footer{
     font-size: larger;
 }
 
-h1{
-    text-align: center;
+.ill{
+    display: flex;
 }
