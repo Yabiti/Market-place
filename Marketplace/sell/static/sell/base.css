@@ -29,6 +29,10 @@ p{
     font-weight: bold;
 }
 
+#new{
+    text-align: center;
+}
+
 footer{
     background-color: rgb(13, 13, 26);
     padding: 30px;
@@ -43,4 +47,12 @@ footer{
     direction: rtl;
     padding: 10px;
     margin: 0 20px;
+}
+
+.low{
+    font-size: larger;
+}
+
+h2{
+    text-align: center;
 }
