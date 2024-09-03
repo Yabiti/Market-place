@@ -53,12 +53,5 @@ footer{
     font-size: larger;
 }
 
-.items{
-    margin: auto;
-    border: 1px solid #ccc;
-    display: flex;
-}
-img{
-    max-width: 100%;
-}
+
 
