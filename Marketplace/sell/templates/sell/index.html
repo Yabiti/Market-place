@@ -20,6 +20,16 @@
         <div id="new">
         <h2>Newest Item</h2>
         </div>
+        <div class="items">
+            {% for item in items %}
+            <div>
+                <a href="/">
+                    <div>
+                        <img src="{{ item.image.url }}">
+                    </div>
+                </a>
+            </div>
+        </div>
         <footer>
             <h3>About</h3>
             <p>blalalallalllfjfjfjgjgflfgllg</p>
