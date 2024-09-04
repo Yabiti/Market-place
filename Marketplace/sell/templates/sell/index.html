@@ -37,13 +37,11 @@
             </div>
             <div class="items">
                 {% for category in Categories %}
-                <div class="la">
+                <div class="cat">
                     <a href="/">
-                    <div>
                         <h3>{{ category.name }}</h3>
                         <p>{{ category.items.count }} items</p>
                     </a>
-                </div>
             </div>
             {% endfor %}
         <footer>
