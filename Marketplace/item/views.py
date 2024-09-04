@@ -5,6 +5,6 @@ from .models import item
 def detail(request, pk):
     item = get_object_or_404(item, pk=pk)
 
-    return render(request, 'item/detail.html'{
-        
+    return render(request, 'item/detail.html',{
+
     })
