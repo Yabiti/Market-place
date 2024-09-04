@@ -25,4 +25,4 @@ urlpatterns = [
     path('contact', contact, name='contact'),
     path('base', base, name='base'),
     path('admin/', admin.site.urls),
-]
+] * static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
