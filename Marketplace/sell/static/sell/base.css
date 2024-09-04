@@ -52,4 +52,9 @@ footer{
 .low{
     font-size: larger;
 }
-s
+
+.la{
+    display: inline-block;
+    padding: 20px;
+    margin: 100px;
+}
