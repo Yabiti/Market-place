@@ -56,11 +56,32 @@ footer{
 .la{
     display: inline-block;
     padding: 20px;
-    margin: 100px;
-
+    margin: 50px;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
 }
 
 img{
-    width: 100px;
+    width: 200px;
     height: 150px;
+}
+
+p{
+    font-size: medium;
+    color: black;
+    border-radius: 50px;
+}
+
+.cat{
+    display: inline-block;
+    padding: 20px;
+    margin: 50px;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
 }
