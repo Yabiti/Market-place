@@ -1,0 +1,35 @@
+{% extends 'sell/index.html' %}
+
+{% block title %} {{ item.name }} {% endblock %}
+
+{% block body %}
+<nav class="high">
+    <a href="/">puddle</a>
+</nav>
+<nav>
+    <div id="coll">
+        <a href="#">New Item</a>
+        <a href="#">Browse</a>
+        <a href="#">sign up</a>
+        <a href="#">log in</a>
+    </div>
+</nav>
+<div id="new">
+<h2>Newest Item</h2>
+</div>
+<img src="{{ item.image.url }}">
+<footer>
+    <h3>About</h3>
+    <p>blalalallalllfjfjfjgjgflfgllg</p>
+    <ul class="di">
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms Of Use</a></li>
+       
+    </ul>
+</footer>
+</body>
+<img src="{{ item.image.url }}">
+{% endblock %}
