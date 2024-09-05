@@ -21,9 +21,11 @@
     <h1>{{item.name}}</h1>
     <p><strong>price: {{ item.price }}</strong></p>
     <p><strong>seller: {{ item.created_by.username }}</strong></p>
+    {% if item.description %}
     <p><strong>description</strong><br>
         {{item.description}}
     </p>
+    {% endif %}
 </div>
 <footer>
     <h3>About</h3>
