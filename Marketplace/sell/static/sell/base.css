@@ -97,3 +97,13 @@ p{
 .ph{
     width: 300px;
 }
+
+.ll{
+    display: inline-block;
+    background: teal;
+    font-size: 40px;
+    margin-top: 10px;
+    border-radius: 10px;
+    
+    
+}
