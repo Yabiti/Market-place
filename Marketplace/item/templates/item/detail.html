@@ -30,6 +30,22 @@
     <div class="ll">
     <a href="#">contact seller</a>
     </div>
+</div>
+<div id="new">
+    <h2>Related Item</h2>
+    </div>
+    <div class="items">
+        {% for item in related_items %}
+        <div class="la">
+            <a href="{% url 'item:detail' item.id %}">
+            <div>
+                <img src="{{ item.image.url }}">
+                <h3>{{ item.name }}</h3>
+                <p>price: {{ item.price }}</p>
+            </a>
+    </div>
+    </div>
+    {% endfor %}
 <footer>
     <h3>About</h3>
     <p>blalalallalllfjfjfjgjgflfgllg</p>
