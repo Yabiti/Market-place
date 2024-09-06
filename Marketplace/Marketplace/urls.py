@@ -18,10 +18,9 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from sell.views import index, contact, base
 
 urlpatterns = [
-    path('', index, name='index'),
+    path('', include('sell.urls')),
     path('items/', include('item.urls')),
     path('base', base, name='base'),
     path('admin/', admin.site.urls),
