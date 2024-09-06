@@ -36,14 +36,14 @@
             <h2>Categories</h2>
             </div>
             <div class="items">
-                {% for category in Categories %}
+                {% for category in categories %}
                 <div class="cat">
-                    <a href="/">
-                        <h3>{{ category.name }}</h3>
-                        <p>{{ category.items.count }} items</p>
+                    <a href="#">
+                        <h2>{{category.name}}</h2>
+                        <p>{{category.items.count}} items</p>
                     </a>
-            </div>
-            {% endfor %}
+                </div>
+                {% endfor %}
             <footer>
                 <h3>About</h3>
                 <p>blalalallalllfjfjfjgjgflfgllg</p>
