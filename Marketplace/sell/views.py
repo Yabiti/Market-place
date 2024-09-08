@@ -1,9 +1,9 @@
 from django.shortcuts import render
 
-from item.models import Category, Item, form
+from item.models import Category, Item
 # Create your views here.
 
-from .views
+from .forms import SignUpForm
 def index(request):
     items = Item.objects.filter(is_sold=False)[0:6]
     categories = Category.objects.all()
