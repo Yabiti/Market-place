@@ -1,9 +1,9 @@
 from django.shortcuts import render
 
 from item.models import Category, Item
+from .forms import SignUpForm
 # Create your views here.
 
-from .forms import SignUpForm
 def index(request):
     items = Item.objects.filter(is_sold=False)[0:6]
     categories = Category.objects.all()
@@ -19,8 +19,8 @@ def base(request):
     return render(request, 'sell/base.html')
 
 def signup(request):
-    form = SignUpForm
+    form = SignUpForm()
 
     return render(request, 'sell/signup.html', {
-        'form', form
+        'form': form
     })

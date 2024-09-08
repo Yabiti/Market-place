@@ -18,11 +18,14 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from sell.views import index, contact, base
+from sell.views import index, contact, base, signup
 
 urlpatterns = [
     path('', include('sell.urls')),
     path('items/', include('item.urls')),
     path('base', base, name='base'),
+    path('contact', contact, name='contact'),
+    path('signup/', signup, name="signup"),
+ 
     path('admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
