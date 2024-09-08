@@ -23,7 +23,7 @@
         <h2>sign up</h2>
         <from method="post", action=",">
             {% csrf_token %}
-
+            {{ fomrs.non_field_errors }}
             <button>Submit</button>
         </from>
     </div>
