@@ -20,7 +20,8 @@ def base(request):
 
 def signup(request):
     if request.method == "POST":
-    form = SignUpForm()
+        form = SignUpForm(request.POST)
+
 
     return render(request, 'sell/signup.html', {
         'form': form
