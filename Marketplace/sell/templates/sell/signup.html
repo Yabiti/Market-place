@@ -22,7 +22,9 @@
     <div class="sold">
         <h2>sign up</h2>
         <from method="post", action=",">
-            
+            {% csrf_token %}
+
+            {{form.as_p }}
         </from>
     </div>
     <footer>
