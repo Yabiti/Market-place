@@ -20,3 +20,7 @@ def base(request):
 
 def signup(request):
     form = SignUpForm
+
+    return render(request, 'sell/signup.html', {
+        'form', form
+    })
