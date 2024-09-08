@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 from item.models import Category, Item
 from .forms import SignUpForm
@@ -24,8 +24,10 @@ def signup(request):
 
         if form.is_valid():
             form.save()
-
-    form = SignUpForm()
+        
+        return redirect('login/')
+    else:
+        form = SignUpForm()
     return render(request, 'sell/signup.html', {
         'form': form
     })
