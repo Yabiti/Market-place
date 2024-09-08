@@ -23,18 +23,28 @@
         <h2>sign up</h2>
         <from method="post", action=",">
             {% csrf_token %}
-            {{ fomrs.non_field_errors }}
             <div class="form">
-                <label>User name</label><br>
-                {{ form.username }}
+                <label>User name</label>
+                    {{ form.username }}
 
-                <div class="form">
-                    <label>Email</label><br>
+                <label>Email</label>
                     {{ form.email }}
 
-                    <div class="form">
-                        <label>password</label><br>
-                        {{ form.password }}
+                <label>password</label>
+                    {{ form.password1 }}
+
+                <label> repeat password</label>
+                    {{ form.password2 }}
+                
+                {% if form.erros or form.non_field_errors %}
+                <div class="clu">
+                    {% for field in form %}
+                        {{field.errors}}
+                    {% endfor %}
+
+                    {{ forms.non_field_errors }}
+                </div>
+                {% endif %}
             </div>
             <button>Submit</button>
         </from>
