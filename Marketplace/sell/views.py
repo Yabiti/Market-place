@@ -25,7 +25,7 @@ def signup(request):
         if form.is_valid():
             form.save()
 
-
+    form = SignUpForm()
     return render(request, 'sell/signup.html', {
         'form': form
     })
