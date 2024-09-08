@@ -17,3 +17,6 @@ def contact(request):
 
 def base(request):
     return render(request, 'sell/base.html')
+
+def signup(request):
+    form = SignUpForm
