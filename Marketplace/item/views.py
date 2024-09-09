@@ -11,3 +11,5 @@ def detail(request, pk):
         'related_items': related_items
 })
 
+@login_required
+def new(request):
