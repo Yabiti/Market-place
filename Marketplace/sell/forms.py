@@ -3,6 +3,8 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
 
 class LoginForm
+
+
 class SignUpForm(UserCreationForm):
     class Meta:
         model = User
