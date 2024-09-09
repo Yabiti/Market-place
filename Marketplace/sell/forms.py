@@ -8,7 +8,7 @@ class LoginForm(AuthenticationForm):
         'class': 'w-full py-4 px-6 rounded-xl'
     }))
 
-     password = forms.CharField(widget=forms.PasswordInput(attrs={
+    password = forms.CharField(widget=forms.PasswordInput(attrs={
         'placeholder': "Your password",
         'class': 'w-full py-4 px-6 rounded-xl'
     }))
