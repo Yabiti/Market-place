@@ -16,6 +16,6 @@ def detail(request, pk):
 def new(request):
     form = NewItemForm()
 
-    return render(request, 'item/login.html',{
+    return render(request, 'item/form.html',{
         'form': form,
 })
