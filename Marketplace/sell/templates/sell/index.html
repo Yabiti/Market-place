@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+    <link  rel="stylesheet" href="{% static 'sell/base.css' %}">
+    </head>
+    <body>
+        {% block body %}
+        <nav class="high">
+            <a href="/">puddle</a>
+        </nav>
+        <nav>
+            <div id="coll">
+                <a href="{% url 'item:new' %}">New Item</a>
+                <a href="#">Browse</a>
+                <a href="{% url 'sell:signup' %}">sign up</a>
+                <a href="{% url 'sell:login' %}">login</a>
+
+            </div>
+        </nav>
+        <div id="new">
+        <h2>Newest Item</h2>
+        </div>
+        <div class="items">
+            {% for item in items %}
+            <div class="la">
+                <a href="{% url 'item:detail' item.id %}">
+                <div>
+                    <img src="{{ item.image.url }}">
+                    <h3>{{ item.name }}</h3>
+                    <p>price: {{ item.price }}</p>
+                </a>
+        </div>
+        </div>
+        {% endfor %}
+        <div id="new">
+            <h2>Categories</h2>
+            </div>
+            <div class="items">
+                {% for category in categories %}
+                <div class="cat">
+                    <a href="#">
+                        <h2>{{category.name}}</h2>
+                        <p>{{category.items.count}} items</p>
+                    </a>
+                </div>
+                {% endfor %}
+            <footer>
+                <h3>About</h3>
+                <p>blalalallalllfjfjfjgjgflfgllg</p>
+                <ul class="di">
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="{% url 'sell:contact' %}">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>  
+                </ul>
+            </footer>
+    </body>
+</html>
+{% endblock %}
