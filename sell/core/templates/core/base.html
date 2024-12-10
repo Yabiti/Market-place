@@ -2,11 +2,11 @@
 <html>
     <head charset="utf-8">
         <meta name="viewport" content="width-device-width", initial-scale="1.0">
-        <title>Sell</title>
+        <title>{% block title %} {% endblock %} | Sell</title>
     </head>
     <body>
         <div class="head">
-            {% content block%}
+            {% block body %}
             {% endblock %}
         </div>
     </body>
