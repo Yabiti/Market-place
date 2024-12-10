@@ -1,11 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head charset="utf-8">
-        <meta name="viewport" content="width-device-width", initial-scale="1.0">
+        <meta name="viewport"  initial-scale="1.0">
         <title>{% block title %} {% endblock %} | Sell</title>
+        <link href="{% static 'core/yab.css' %}" rel="stylesheet">
+
     </head>
     <body>
-        <nav class="nav">
+        <h1>Hellen</h1>
+        <div class="dis">
+        <nav class="nav1">
             <a href="#">Sell</a>
         </nav>
         <nav class="nav1">
@@ -20,6 +25,7 @@
         <nav class="nav1">
             <a href="#">Log in</a>
         </nav>
+        </div>
         <div class="head">
             {% block body %}
             {% endblock %}
