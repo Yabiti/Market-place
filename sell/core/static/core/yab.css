@@ -113,3 +113,7 @@ body, html {
 .footer-section ul li a:hover {
     text-decoration: underline;
 }
+
+h2{
+    text-align: center;
+}

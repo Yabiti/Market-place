@@ -5,5 +5,20 @@
 
 {% block title %} welcome {% endblock %}
 {% block body %}
-    <h1>yabaaw</h1>
+    <h2 class="new">Newest Items</h2>
+    <div class="grid">
+        {% for item in items%}
+        <div>
+            <a href="#">
+                <div>
+                    <img src="{{items.images.url}}">
+                </div>
+                <div class="price">
+                    <h2>{{item.title}}</h2>
+                    <p>price: {{item.price}}</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    {% endfor %}
 {% endblock %}
