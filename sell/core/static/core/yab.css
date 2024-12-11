@@ -29,7 +29,7 @@ a{
     font-size: 16px;
     transition: background-color 0.3s ease;
     margin: 10px;
-    text-align: center;
+    text-align: center; /* Center text */
 }
 
 /* Specific styles for the Sign up link */
@@ -50,12 +50,32 @@ a{
     background-color: #333333; /* Darker gray on hover */
 }
 
-/* Container styling to align items */
-.container {
+/* Flex container for navigation and auth links */
+.nav-container {
     display: flex;
     justify-content: flex-end; /* Align to the right */
     align-items: center;
-    height: 100vh; /* Adjust height as needed */
     background-color: #f0f0f0; /* Light background for clarity */
+    padding: 10px; /* Padding around the container */
 }
 
+/* Styles for navigation links */
+.nav-link {
+    margin: 0 10px;
+    text-decoration: none; /* Remove underline */
+    color: blue; /* Blue text color */
+    font-size: 16px;
+}
+
+/* Additional styling for spacing */
+.auth-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Ensure the whole page height is used for demonstration */
+body, html {
+    height: 100vh;
+    margin: 0;
+}
