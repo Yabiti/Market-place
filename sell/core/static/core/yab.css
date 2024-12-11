@@ -1,3 +1,4 @@
+
 .nav{
     align-items: center;
 }
@@ -11,5 +12,50 @@ h1{
     align-items: center;
     justify-content: flex-end;
     gap: 20px;
+    text-decoration: none;
+}
+
+a{
+    color: black;
+}
+
+/* Base styles for all links that should look like buttons */
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+    text-align: center; /* Center text */
+}
+
+/* Specific styles for the Sign up link */
+.signup-link {
+    background-color: #4CAF50; /* Green */
+}
+
+.signup-link:hover {
+    background-color: #45a049;
+}
+
+/* Specific styles for the Log in link */
+.login-link {
+    background-color: #555555; /* Gray */
+}
+
+.login-link:hover {
+    background-color: #333333;
+}
+
+/* Container to center links */
+.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
 }
 
