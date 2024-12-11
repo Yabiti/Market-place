@@ -114,7 +114,21 @@ body, html {
     text-decoration: underline;
 }
 
-h2{
+.new{
     text-align: center;
 }
 
+.py{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    display: inline-block;
+
+}
+
+img{
+    width: 300px;
+    height: 250px;
+}
