@@ -9,23 +9,19 @@
     </head>
     <body>
         <h1>Puddle</h1>
-        <div class="dis">
-        <nav class="nav1">
-            <a href="#">Sell</a>
-        </nav>
-        <nav class="nav2">
-            <a href="#">new item</a>
-        </nav>
-        <nav class="nav3">
-            <a href="#">Browse</a>
-        </nav>
-        <nav class="nav4">
-            <a href="#">Sign up</a>
-        </nav>
-        <nav class="nav5">
-            <a href="#">Log in</a>
-        </nav>
-        </div>
+        <h1>Puddle</h1> 
+        <div class="nav-container"> 
+            <nav>
+                <a href="#" class="nav-link">Sell</a>
+                <a href="#" class="nav-link">Browse</a>
+                <a href="#" class="nav-link">New Item</a>
+            </nav>
+             <div class="auth-container"> 
+                <a href="#" class="button-link signup-link">Sign up</a> 
+                <a href="#" class="button-link login-link">Log in</a> 
+            </div> 
+    </div>
+       
         <div class="head">
             {% block body %}
             {% endblock %}

@@ -19,43 +19,43 @@ a{
     color: black;
 }
 
-/* Base styles for all links that should look like buttons */
+/* Base styles for all button-like links */
 .button-link {
     display: inline-block;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none; /* Remove underline */
-    color: white;
+    color: white; /* White text color */
     font-size: 16px;
     transition: background-color 0.3s ease;
     margin: 10px;
-    text-align: center; /* Center text */
+    text-align: center;
 }
 
 /* Specific styles for the Sign up link */
 .signup-link {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50; /* Green background */
 }
 
 .signup-link:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Darker green on hover */
 }
 
 /* Specific styles for the Log in link */
 .login-link {
-    background-color: #555555; /* Gray */
+    background-color: #555555; /* Gray background */
 }
 
 .login-link:hover {
-    background-color: #333333;
+    background-color: #333333; /* Darker gray on hover */
 }
 
-/* Container to center links */
+/* Container styling to align items */
 .container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; /* Align to the right */
     align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+    height: 100vh; /* Adjust height as needed */
+    background-color: #f0f0f0; /* Light background for clarity */
 }
 
