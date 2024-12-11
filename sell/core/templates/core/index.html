@@ -8,17 +8,17 @@
     <h2 class="new">Newest Items</h2>
     <div class="grid">
         {% for item in items%}
-        <div>
+        <div class="py">
             <a href="#">
-                <div>
-                    <img src="{{items.images.url}}">
+                <div class="img">
+                    <img src="{{item.image.url}}">
                 </div>
                 <div class="price">
                     <h2>{{item.title}}</h2>
-                    <p>price: {{item.price}}</p>
+                    <p>Price: {{item.price}}</p>
                 </div>
             </a>
         </div>
+        {% endfor %}
     </div>
-    {% endfor %}
 {% endblock %}
