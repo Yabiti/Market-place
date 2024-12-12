@@ -8,7 +8,6 @@ from core.views import index, contact
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('item/', include(('item.urls'))),
-    path('', index, name="index"),
-    path('contact/', contact, name="contact")
+    path('', include(('core.urls'))),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
  
