@@ -1,7 +1,7 @@
-from django.shortcuts import render
-
+from django.shortcuts import render, redirect
+from django.contrib.auth import authenticate, login
 from item.models import Category, Item
-from  .forms import SignUpForm, authenticate, login, redirect
+from  .forms import SignUpForm
 # Create your views here.
 def index(request):
     items = Item.objects.filter(is_sold=False)[0:6]
@@ -29,5 +29,5 @@ def signup(request):
             return redirect('home')
     else:
         form = SignUpForm()
-    return render(request, 'signup.html',{
+    return render(request, 'core/signup.html',{
         'form': form})
