@@ -26,9 +26,9 @@
     <a href="#">Contact Seller</a>
 </div>
 {% endif %}
-<h2 class="new">Newest Items</h2>
+<h2 class="new">Related Items</h2>
 <div class="grid">
-    {% for item in items%}
+    {% for item in related_items%}
     <div class="py">
         <a href="{% url 'item:detail' item.id %}">
             <div class="img">
