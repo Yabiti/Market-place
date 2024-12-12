@@ -1,4 +1,8 @@
-{% extends 'core/base.html %}
+{% extends 'core/base.html' %}
+
+{% load static %}
+<llnk href="{% static  'core/styles.css' %}" rel="stylesheet">
+
 
 {% block title%} {{item.name}}{% endblock %}
 
@@ -6,5 +10,8 @@
 
 <div class="img">
     <img src="{{item.image.url}}">
+</div>
+<div class="item">
+    <h1>{{item.name}}</h1>
 </div>
 {% endblock %}
