@@ -133,7 +133,32 @@ h2 {
     text-align: center;
 }
 
-/* Form styles */
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.conteneur {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Styles pour le formulaire */
 form {
     display: flex;
     flex-direction: column;
@@ -174,10 +199,9 @@ button:hover {
     background-color: #45a049;
 }
 
-/* Align input fields vertically */
+/* Aligner les champs d'entrée verticalement */
 input, button {
     display: block;
     width: 100%;
     box-sizing: border-box;
 }
-
