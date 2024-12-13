@@ -1,16 +1,16 @@
 {% extends 'core/base.html' %}
 {% load static %}
 
-<llnk href="{% static  'core/yab.css' %}" rel="stylesheet">
+<link href="{% static  'core/yab.css' %}" rel="stylesheet">
 
-{% block title %} Sign up{% endblock %}
+{% block title %} Sign up {% endblock %}
 {% block body %}
-<div class="container">
-    <h2>Sign Up</h2>
-    <form method="post">
+<div class="contenitore">
+    <h2 class="intestazione">Sign Up</h2>
+    <form method="post" class="formulario">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Sign Up</button>
+        <button type="submit" class="bottone">Sign Up</button>
     </form>
 </div>
 {% endblock %}

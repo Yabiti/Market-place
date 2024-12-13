@@ -341,7 +341,7 @@ body {
 }
 
 /* Base styles */
-body {
+.corpo {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     display: flex;
@@ -351,7 +351,7 @@ body {
     margin: 0;
 }
 
-.container {
+.contenitore {
     background-color: white;
     padding: 30px;
     border-radius: 10px;
@@ -360,29 +360,29 @@ body {
     max-width: 400px;
 }
 
-h2 {
+.intestazione {
     margin-bottom: 20px;
     text-align: center;
 }
 
 /* Form styles */
-form {
+.formulario {
     display: flex;
     flex-direction: column;
 }
 
-form p {
+.formulario p {
     margin-bottom: 15px;
 }
 
-label {
+.etichetta {
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
+.input-testo,
+.input-email,
+.input-password {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -391,7 +391,7 @@ input[type="password"] {
     box-sizing: border-box;
 }
 
-button {
+.bottone {
     padding: 12px;
     background-color: #4CAF50;
     color: white;
@@ -402,12 +402,12 @@ button {
     margin-top: 10px;
 }
 
-button:hover {
+.bottone:hover {
     background-color: #45a049;
 }
 
 /* Align input fields vertically */
-input, button {
+.input-testo, .input-email, .input-password, .bottone {
     display: block;
     width: 100%;
     box-sizing: border-box;
