@@ -48,14 +48,7 @@ h1{
     background-color: #333333; /* Darker gray on hover */
 }
 
-/* Flex container for navigation and auth links */
-.nav-container {
-    display: flex;
-    justify-content: flex-end; /* Align to the right */
-    align-items: center;
-    background-color: #f0f0f0; /* Light background for clarity */
-    padding: 10px; /* Padding around the container */
-}
+
 
 /* Styles for navigation links */
 .nav-link {
@@ -68,14 +61,6 @@ h1{
 /* Ensure the whole page height is used for demonstration */
 
 /* Header styling */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #e0e0e0;
-}
-
 
 .new{
     text-align: center;
@@ -107,29 +92,3 @@ img{
     padding: 100px;
     background-color: #f0f0f0;
 }
-
-/* Base styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.container {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-}
-
-h2 {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
