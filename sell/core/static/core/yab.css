@@ -1,94 +1,69 @@
-html, body {
-    height: 100%;
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Brand/Title styles */
+.header h1 {
+    font-size: 24px;
+    font-weight: bold;
     margin: 0;
 }
 
-body {
+/* Navigation container */
+.nav-container {
     display: flex;
-    flex-direction: column;
-}
-
-
-.nav{
     align-items: center;
 }
 
-h1{
-    color: black;
+/* Navigation links */
+.nav-container nav {
+    display: flex;
+    gap: 15px;
 }
 
-/* Base styles for all button-like links */
-.button-link {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none; /* Remove underline */
-    color: white; /* White text color */
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-    margin: 0 10px; /* Margin for spacing between buttons */
-    text-align: center; /* Center text */
-}
-
-/* Specific styles for the Sign up link */
-.signup-link {
-    background-color: #4CAF50; /* Green background */
-}
-
-.signup-link:hover {
-    background-color: #45a049; /* Darker green on hover */
-}
-
-/* Specific styles for the Log in link */
-.login-link {
-    background-color: #555555; /* Gray background */
-}
-
-.login-link:hover {
-    background-color: #333333; /* Darker gray on hover */
-}
-
-
-
-/* Styles for navigation links */
 .nav-link {
-    margin: 0 10px;
-    text-decoration: none; /* Remove underline */
-    color: blue; /* Blue text color */
+    text-decoration: none;
+    color: #000;
     font-size: 16px;
 }
 
-/* Ensure the whole page height is used for demonstration */
-
-/* Header styling */
-
-.new{
-    text-align: center;
+.nav-link:hover {
+    color: #007bff;
 }
 
-.py{
+/* Auth container */
+.auth-container {
     display: flex;
-    flex-wrap: wrap;
+    gap: 15px;
+    margin-left: 20px;
 }
 
-.price{
-    display: inline-block;
-
+.signup-link {
+    text-decoration: none;
+    color: #fff;
+    background-color: #28a745;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
-img{
-    width: 300px;
-    height: 250px;
-    justify-content: space-between;
-}
-
-
-.grid {
-    flex-grow: 1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 100px;
-    padding: 100px;
-    background-color: #f0f0f0;
+.login-link {
+    text-decoration: none;
+    color: #fff;
+    background-color: #6c757d;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
