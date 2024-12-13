@@ -1,38 +1,38 @@
 {% extends 'core/base.html' %}
 
 {% load static %}
-<llnk href="{% static  'core/styles.css' %}" rel="stylesheet">
+<link href="{% static 'core/styles.css' %}" rel="stylesheet">
 
-
-{% block title%} {{item.name}}{% endblock %}
+{% block title %} {{item.name}}{% endblock %}
 
 {% block body %}
+<div class="item-detail">
+    <div class="img">
+        <img src="{{item.image.url}}" alt="{{item.name}}">
+    </div>
+    <div class="details">
+        <h1>{{item.name}}</h1>
+        <p>Price: {{item.price}}</p>
+        <p>Seller: {{item.created_by}}</p>
+        {% if item.description %}
+        <div class="description">
+            <strong>Description:</strong><br>
+            {{item.description}}
+        </div>
+        <div class="con">
+            <a href="#">Contact Seller</a>
+        </div>
+        {% endif %}
+    </div>
+</div>
 
-<div class="img">
-    <img src="{{item.image.url}}">
-</div>
-<div class="item">
-    <h1>{{item.name}}</h1>
-    <p>Price: {{item.price }}</p>
-    <p>seller: {{item.created_by }}</p>
-</div>
-
-{% if item.description %}
-<div class="description">
-    <strong>Description:</strong><br>
-    { {item.description}}
-</div>
-<div class="con">
-    <a href="#">Contact Seller</a>
-</div>
-{% endif %}
 <h2 class="new">Related Items</h2>
 <div class="grid">
-    {% for item in related_items%}
+    {% for item in related_items %}
     <div class="py">
         <a href="{% url 'item:detail' item.id %}">
             <div class="img">
-                <img src="{{item.image.url}}">
+                <img src="{{item.image.url}}" alt="{{item.name}}">
             </div>
             <div class="price">
                 <h2>{{item.name}}</h2>
