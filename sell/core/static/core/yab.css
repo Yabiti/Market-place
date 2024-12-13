@@ -340,20 +340,20 @@ body {
     color: #007bff;
 }
 
-/* Specific styles for sign-up page */
-.signup-page body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    height: 100vh;
+/* Base styles specific to signup page */
+.signup-page {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
 /* Hide validation messages */
 .signup-page .errorlist {
-    display: none;
+    display: none !important; /* Ensure messages are hidden */
 }
 
 .signup-page .contenitore {
@@ -409,14 +409,4 @@ body {
 
 .signup-page .bottone:hover {
     background-color: #45a049;
-}
-
-/* Align input fields vertically */
-.signup-page .input-testo, 
-.signup-page .input-email, 
-.signup-page .input-password, 
-.signup-page .bottone {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
 }
