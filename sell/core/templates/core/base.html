@@ -16,12 +16,11 @@
                         <a href="#" class="nav-link">New Item</a> 
                     </nav>
                 <div class="auth-container">
-                    <a href="#" class="signup-link">Sign up</a>
+                    <a href="{% url 'core:signup' %}" class="signup-link">Sign up</a>
                     <a href="#" class="button-link login-link">Log in</a>
                 </div>
             </div>
         </header>
-         
         <div class="head">
             {% block body %}
             {% endblock %}

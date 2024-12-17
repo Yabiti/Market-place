@@ -10,7 +10,23 @@
         <h2 class="intestazione">Sign Up</h2>
         <form method="post" class="formulario">
             {% csrf_token %}
-            {{ form.as_p }}
+            {{ form.non_field_errors }}
+            <div class="mb1">
+                <p>username</p>
+                {{ form.username }}
+            </div>
+            <div class="mb1">
+                <p>Email</p>
+                {{ form.email }}
+            </div>
+            <div class="mb1">
+                <p>password1</p>
+                {{ form.password }}
+            </div>
+            <div class="mb1">
+                <p>Repeat password</p>
+                {{ form.password2 }}
+            </div>
             <button type="submit" class="bottone">Sign Up</button>
         </form>
     </div>
