@@ -15,10 +15,17 @@
                         <a href="#" class="nav-link">Browse</a> 
                         <a href="#" class="nav-link">New Item</a> 
                     </nav>
-                <div class="auth-container">
-                    <a href="{% url 'core:signup' %}" class="signup-link">Sign up</a>
-                    <a href="{% url 'core:login' %}" class="button-link login-link">Log in</a>
-                </div>
+                {% if request.user.is_authenticated %}
+                    <div class="auth-container">
+                        <a href="#" class="signup-link">Inbox</a>
+                        <a href="#" class="button-link login-link">Dashboard</a>
+                    </div>
+                {% else %}        
+                    <div class="auth-container">
+                        <a href="{% url 'core:signup' %}" class="signup-link">Sign up</a>
+                        <a href="{% url 'core:login' %}" class="button-link login-link">Log in</a>
+                    </div>
+                {% endif %}
             </div>
         </header>
         <div class="head">
