@@ -6,3 +6,19 @@ class SignUpForm(UserCreationForm):
     class Meta:
         model = User
         fields = ('username', 'email', 'password1', 'password2')
+
+    username = forms.CharField(widget=forms.TextInput(attrs={
+        'placeholder': 'Your username',
+    }))
+
+    email = forms.CharField(widget=forms.EmailInput(attrs={
+        'placeholder': 'Your Email',
+    }))
+
+    password1 = forms.CharField(widget=forms.PasswordInput(attrs={
+        'placeholder': 'Your password',
+    }))
+
+    password2 = forms.CharField(widget=forms.PasswordInput(attrs={
+        'placeholder': 'Repeat password',
+    }))
