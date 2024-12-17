@@ -1,0 +1,32 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+<link href="{% static 'core/yab.css' %}" rel="stylesheet">
+
+{% block title %} Sign up {% endblock %}
+{% block body %}
+<div class="signup-page">
+    <div class="contenitore">
+        <h2 class="intestazione">Log In</h2>
+        <form method="post" class="formulario">
+            {% csrf_token %}
+            <div class="mb1">
+                <p>username</p>
+                {{ form.username }}
+            </div>
+            <div class="mb1">
+                <p>password</p>
+                {{ form.password }}
+            </div>
+            {% if form.errors or form.non_field_errors %}
+            {% for field in form %}
+                {{ field.errors }}
+            {% endfor %}
+
+            {{ form.non_field_errors }}
+            {% endif %}
+            <button type="submit" class="bottone">Sign Up</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
