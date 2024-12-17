@@ -410,3 +410,51 @@ body {
 .signup-page .bottone:hover {
     background-color: #45a049;
 }
+
+/* General Form Styles */
+.mb1 {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mb1 p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.mb1 input[type="text"],
+.mb1 input[type="email"],
+.mb1 input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.mb1 input[type="text"]:focus,
+.mb1 input[type="email"]:focus,
+.mb1 input[type="password"]:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.mb1 button {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    align-self: center;
+}
+
+.mb1 button:hover {
+    background-color: #45a049;
+}
