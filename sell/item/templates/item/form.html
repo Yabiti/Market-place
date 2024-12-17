@@ -1,8 +1,23 @@
 {% extends 'core/base.html' %}
 {% load static %}
 
-<llnk href="{% static  'core/style..css' %}" rel="stylesheet">
+<link href="{% static 'core/style.css' %}" rel="stylesheet">
 
 {% block title %} {{ title }} {% endblock %}
 {% block body %}
+<div class="ffr">
+    <h1>{{ title }}</h1>
+</div>
+<form method="post" action="." enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    
+    {% if form.errors or form.non_field_errors %}
+        {% for field in form %}
+            {{ field.errors }}
+        {% endfor %}
+        {{ form.non_field_errors }}
+    {% endif %}
+    <button type="submit" class="bottone">Sign Up</button>
+</form>
 {% endblock %}
