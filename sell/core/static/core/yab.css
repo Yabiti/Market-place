@@ -411,3 +411,86 @@ body {
     background-color: #45a049;
 }
 
+/* Base styles specific to signup page */
+.signup-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Hide validation messages */
+.signup-page .errorlist {
+    display: none; /* Ensure messages are hidden */
+}
+
+.signup-page .contenitore {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.signup-page .intestazione {
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+.signup-page .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.signup-page .mb1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; /* Align labels to the right */
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.signup-page .mb1 p {
+    font-weight: bold;
+    margin-left: 10px; /* Add space between the label and input */
+    margin-right: 10px; /* Add space between the label and input */
+    width: 30%; /* Adjust to fit label within flexbox */
+    text-align: right; /* Align text to the right */
+}
+
+.signup-page .mb1 input {
+    width: 70%; /* Make input box longer */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.signup-page .mb1 input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.signup-page .bottone {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    align-self: center;
+}
+
+.signup-page .bottone:hover {
+    background-color: #45a049;
+}
