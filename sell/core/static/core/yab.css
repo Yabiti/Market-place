@@ -525,8 +525,24 @@ body {
 form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end; /* Align items to the right */
     gap: 15px;
+}
+
+/* Input field container */
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+/* Labels */
+.form-group label {
+    width: 30%;
+    text-align: right;
+    margin-right: 10px;
+    font-weight: bold;
 }
 
 /* Input fields and textarea */
@@ -567,6 +583,7 @@ form .bottone {
     cursor: pointer;
     font-size: 16px;
     text-align: center;
+    align-self: center; /* Center the button */
 }
 
 form .bottone:hover {
@@ -580,6 +597,17 @@ form .bottone:hover {
         padding: 15px;
     }
     
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-group label {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
     form input[type="text"],
     form input[type="email"],
     form input[type="password"],
