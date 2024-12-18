@@ -6,8 +6,8 @@ from django.urls import path, include
 from core.views import index, contact
 
 urlpatterns = [
+    path('', include(('core.urls'))),
     path('admin/', admin.site.urls),
     path('item/', include(('item.urls'))),
-    path('', include(('core.urls'))),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
  
