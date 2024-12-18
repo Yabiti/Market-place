@@ -35,7 +35,9 @@ def new(request):
 
 
 @login_required
-def new(request):
+def edit(request):
+    item = get_object_or_404(item, pk=pk, created_by=request.user)
+
     form = NewItemForm(request.POST, request.FILES)
 
     if form.is_valid():
