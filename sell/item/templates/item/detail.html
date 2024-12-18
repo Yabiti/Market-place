@@ -19,12 +19,17 @@
             <strong>Description:</strong><br>
             {{item.description}}
         </div>
-        <div class="con">
-            <a href="#">Contact Seller</a>
-        </div>
         {% endif %}
     </div>
 </div>
+
+<div class="con">
+    {% if request.user== items.created_by %}
+    <p>tThis is your item!/p>
+    {% else %}
+    <a href="#">Contact Seller</a>
+</div>
+{% endif %}
 
 <h2 class="new">Related Items</h2>
 <div class="grid">
