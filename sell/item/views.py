@@ -1,7 +1,7 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404, redirect
 
-from .forms import NewItemForm
+from .forms import NewItemForm, EditItemForm
 from .models import Item
 # Create your views here.
 
@@ -17,7 +17,7 @@ def detail(request, pk):
 
 @login_required
 def new(request):
-    form = NewItemForm(request.POST, request.FILES)
+    form = EditItemForm(request.POST, request.FILES)
 
     if form.is_valid():
         item = form.save(commit=False)
@@ -25,7 +25,7 @@ def new(request):
         item.save()
 
         return redirect('item:detail', pk=item.id)
-    else:   form = NewItemForm()
+    else:   form = EditItemForm()
 
     return render(request, 'item/form.html', {
         'form': form,
@@ -35,7 +35,7 @@ def new(request):
 
 
 @login_required
-def edit(request):
+def edit(request, pk):
     item = get_object_or_404(item, pk=pk, created_by=request.user)
 
     form = NewItemForm(request.POST, request.FILES)
