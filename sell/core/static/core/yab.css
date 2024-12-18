@@ -587,45 +587,41 @@ button.delete-button {
     /* Other styles */
 }
 
-form {
+.container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Align items to the left */
     align-items: center;
-    gap: 10px;
-    margin: 20px 0;
+    height: 100vh;
+    padding: 20px;
 }
 
-input[name="query"] {
-    width: 300px;
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px; /* Ensuring maximum width for the form */
+}
+
+input[type="text"] {
     padding: 10px;
-    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
-    transition: all 0.3s ease;
-}
-
-input[name="query"]:focus {
-    border-color: #007BFF;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-    outline: none;
 }
 
 button {
-    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #007BFF;
-    color: #fff;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #0056b3;
-}
-
-button:focus {
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }

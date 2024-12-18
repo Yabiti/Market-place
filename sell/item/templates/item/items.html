@@ -7,12 +7,13 @@
 {% block body %}
 
 <h2 class="new">Newest Items</h2>
+<div class="container">
+    <form method="get" action="{% url 'item:items% }">
+        <input name="query" type="text" value="{{query}}" placeholder="find a pes or cloth....">
+        <button> Search</button>
+    </form>
+</div>
 
-<form method="get" action="{% url 'item:items% }">
-    <input name="query" type="text" value="{{query}}" placeholder="find a pes or cloth....">
-
-    <button>Search</button>
-</form> 
 <div class="grid">
     {% for item in items%}
     <div class="py">
