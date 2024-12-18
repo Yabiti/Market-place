@@ -580,3 +580,9 @@ form .bottone:hover {
         padding: 15px;
     }
 }
+
+/* More specific selector for the Delete button */
+button.delete-button {
+    background-color: white;
+    /* Other styles */
+}
