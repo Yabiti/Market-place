@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+<llnk href="{% static  'core/yab.css' %}" rel="stylesheet">
+
+{% block title %} welcome {% endblock %}
+{% block body %}
+    <h2 class="new">Newest Items</h2>
+    <div class="grid">
+        {% for item in items%}
+        <div class="py">
+            <a href="{% url 'item:detail' item.id %}">
+                <div class="img">
+                    <img src="{{item.image.url}}">
+                </div>
+                <div class="price">
+                    <h2>{{item.name}}</h2>
+                    <p>Price: {{item.price}}</p>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
