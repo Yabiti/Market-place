@@ -12,7 +12,7 @@
             <h1>Puddle</h1>
                 <div class="nav-container">
                     <nav>
-                        <a href="#" class="nav-link">Browse</a> 
+                        <a href="{% url 'item:items'%}" class="nav-link">Browse</a> 
                         <a href="{% url 'item:new' %}" class="nav-link">New Item</a> 
                     </nav>
                 {% if request.user.is_authenticated %}
