@@ -20,7 +20,7 @@ class SignUpForm(UserCreationForm):
     }))
 
     email = forms.CharField(widget=forms.EmailInput(attrs={
-        'placeholder': 'Your Email',
+        'placeholder': 'Your Email adress',
     }))
 
     password1 = forms.CharField(widget=forms.PasswordInput(attrs={

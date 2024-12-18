@@ -16,3 +16,17 @@ def index(request):
 def contact(request):
     return render(request, "core/contact.html")
 
+
+def signup(request):
+    if request == 'POST':
+        form = SignUpForm(request.POST)
+
+        if form.is_valid:
+            form.save()
+
+            return redirect('/login/')
+    form = SignUpForm()
+
+    return render(request, 'core/signup.html', {
+        'form': form
+    })
