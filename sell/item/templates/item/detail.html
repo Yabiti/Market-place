@@ -26,7 +26,7 @@
 <div class="con">
     {% if request.user == item.created_by %}
     <p>tThis is your item!</p>
-    <a href="#">Edit</a>
+    <a href="{% url 'item:edit' item.id %}">Edit</a>
     <a href="{% url 'item:delete' item.id %}">Delete</a>
     {% else %}
     <a href="#">Contact Seller</a>
