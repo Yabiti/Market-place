@@ -587,41 +587,34 @@ button.delete-button {
     /* Other styles */
 }
 
-.container {
-    display: flex;
-    justify-content: flex-start; /* Align items to the left */
-    align-items: center;
-    height: 100vh;
-    padding: 20px;
-}
-
-form {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.search-container {
     width: 100%;
-    max-width: 300px; /* Ensuring maximum width for the form */
+    max-width: 600px; /* Maximum width for the container */
+    position: relative;
+    padding: 20px; /* Add padding for better spacing */
+    margin: 100px auto; /* Center the container horizontally */
+    background-color: #f4f4f9; /* Light background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
 }
 
-input[type="text"] {
-    padding: 10px;
-    margin-bottom: 15px;
+#searchInput {
+    width: 100%;
+    max-width: 600px; /* Make sure the search bar doesn’t exceed the container’s width */
+    padding: 15px;
+    margin: 0;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 25px;
     font-size: 16px;
+    box-shadow: none; /* Remove shadow */
+    background-color: transparent; /* Make background clear */
+    outline: none;
 }
 
-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
+#searchInput:focus {
+    border-color: #007bff;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
 }

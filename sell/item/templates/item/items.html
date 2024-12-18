@@ -7,13 +7,18 @@
 {% block body %}
 
 <h2 class="new">Newest Items</h2>
-<div class="container">
-    <form method="get" action="{% url 'item:items% }">
-        <input name="query" type="text" value="{{query}}" placeholder="find a pes or cloth....">
-        <button> Search</button>
-    </form>
-</div>
+    <div class="search-container">
+        <input id="searchInput" name="query" type="text" placeholder="Search or enter web address" onkeypress="searchKeyPress(event)">
+    </div>
 
+    <script type="text/javascript">
+        function searchKeyPress(event) {
+            if (event.key === 'Enter') {
+                // Assuming you have a search functionality or redirect
+                window.location.href = `search_results_page_url?query=${document.getElementById('searchInput').value}`;
+            }
+        }
+    </script>
 <div class="grid">
     {% for item in items%}
     <div class="py">
