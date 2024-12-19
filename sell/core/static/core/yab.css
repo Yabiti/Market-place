@@ -639,3 +639,21 @@ button.delete-button {
     text-decoration: underline; /* Optional: Adds underline on hover */
 }
 
+.clear-box {
+    background-color: green !important;
+    color: white !important;
+    width: 100px;
+    padding: 10px !important;
+    margin: 10px 0 !important;
+    border-radius: 5px !important;
+    text-align: center !important;
+}
+
+.clear-box a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.clear-box a:hover {
+    text-decoration: underline !important;
+}
