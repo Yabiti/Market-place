@@ -13,3 +13,6 @@ def new_conversation(request, item_pk):
         return redirect("dashboard:index")
     
     conversations = conversation.objects.filter(item=item).filter(members_in=[request.user.id])
+
+    if conversations:
+        pass
