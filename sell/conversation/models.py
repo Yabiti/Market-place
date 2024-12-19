@@ -15,4 +15,4 @@ class conversation(models.Model):
 
 
 class conversationmessage(models.Model):
-    
+    conversation = models.ForeignKey()
