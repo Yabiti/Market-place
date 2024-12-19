@@ -4,7 +4,7 @@ from django.db import models
 from item.models import Item
 # Create your models here.
 
-class conversation(models.Model):
+class Conversation(models.Model):
     item = models.ForeignKey(Item, related_name='conversation', on_delete=models.CASCADE)
     members = models.ManyToManyField(User, related_name='conversation')
     created_at = models.DateTimeField(auto_now_add=True)
@@ -14,8 +14,8 @@ class conversation(models.Model):
         ordering = ("-modified_at",)
 
 
-class conversationmessage(models.Model):
-    conversation = models.ForeignKey(conversation, related_name="conversation", on_delete=models.CASCADE)
+class ConversationMessage(models.Model):
+    conversation = models.ForeignKey(Conversation, related_name="conversation", on_delete=models.CASCADE)
     content = models.TextField()
     created_at = models.DateTimeField()
     created_by = models.ForeignKey(User, related_name="Created_messages", on_delete=models.CASCADE)

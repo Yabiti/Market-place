@@ -1,8 +1,9 @@
 from django.shortcuts import render, redirect, get_list_or_404
 
-from .forms import conversationmessageForm
+from .forms import ConversationMessageForm
+
 from item.models import Item
-from .models import conversation
+from .models import Conversation
 # Create your views here.
 
 def new_conversation(request, item_pk):
@@ -18,7 +19,7 @@ def new_conversation(request, item_pk):
         pass
 
     if request.method == 'POST':
-        form = conversationmessageForm(request.POST)
+        form = ConversationMessageForm(request.POST)
 
         if form.is_valid():
             conversation = conversation.objects.create(item=item)
@@ -33,7 +34,8 @@ def new_conversation(request, item_pk):
 
             return redirect('item:detail', pk=item_pk)
         else:
-            form = conversationmessageForm()
+            form = ConversationMessageForm()
+
 
         return render(request, 'conversation/new.html',{
             'form': form
