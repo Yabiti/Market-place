@@ -11,15 +11,15 @@
         <form method="get" action="{% url 'item:items' %}">
             <input id="searchInput" name="query" type="text" value="{{query}}" placeholder="Search or enter web address" onkeypress="searchKeyPress(event)">
         </form>
-        <p>Category</p>
+    </div>
+        <p>Categories</p>
         <ul>
-            <li>
+            <li {% if category.id == categoty_id %} {% endif %}>
             {% for category in categories %}
-            <a href="{% url 'item:items' %}"?query={{query}}& category="{{category.id }}>{{category.name }}"></a>
+            <a href="{% url 'item:items' %}"?query={{query}}& category="{{category.id }}">{{category.name }}</a>
             {% endfor %}
             </li>
         </ul>
-    </div>
 
     <script type="text/javascript">
         function searchKeyPress(event) {
