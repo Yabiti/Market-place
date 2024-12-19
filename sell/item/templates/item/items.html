@@ -11,6 +11,11 @@
         <form method="get" action="{% url 'item:items' %}">
             <input id="searchInput" name="query" type="text" value="{{query}}" placeholder="Search or enter web address" onkeypress="searchKeyPress(event)">
         </form>
+        <p>Category</p>
+        <ul>
+            {% for category in categories %}
+            {% endfor %}
+        </ul>
     </div>
 
     <script type="text/javascript">
