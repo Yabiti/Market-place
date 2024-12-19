@@ -638,3 +638,21 @@ button.delete-button {
 .category-list li a:hover {
     text-decoration: underline; /* Optional: Adds underline on hover */
 }
+
+.filter .clear-box {
+    background-color: green; /* Green background */
+    color: white; /* White text color */
+    padding: 10px; /* Padding inside the box */
+    margin: 10px 0; /* Margin for spacing */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center the text */
+}
+
+.filter .clear-box a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.filter .clear-box a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
