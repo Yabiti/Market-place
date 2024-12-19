@@ -639,25 +639,3 @@ button.delete-button {
     text-decoration: underline; /* Optional: Adds underline on hover */
 }
 
-.filter ul {
-    list-style-type: none; /* Removes default bullets */
-    padding: 0;
-}
-
-.filter ul .clear-box {
-    background-color: green; /* Green background */
-    color: white !important; /* White text color */
-    padding: 10px !important; /* Padding inside the box */
-    margin: 10px 0 !important; /* Margin for spacing */
-    border-radius: 5px; /* Rounded corners */
-    text-align: center; /* Center the text */
-}
-
-.filter ul .clear-box a {
-    color: white !important; /* Link color */
-    text-decoration: none; /* Remove underline */
-}
-
-.filter ul .clear-box a:hover {
-    text-decoration: underline; /* Underline on hover */
-}

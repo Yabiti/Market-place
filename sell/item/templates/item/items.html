@@ -25,12 +25,13 @@
     <div class="filter">
         <ul>
             <p>Clear filters</p>
-            <li>
-                <a href="{url 'item:items'}">Clear</a>
+            <li class="clear-box">
+                <a href="{% url 'item:items' %}">Clear</a>
             </li>
-
         </ul>
     </div>
+    
+
 
     <script type="text/javascript">
         function searchKeyPress(event) {
