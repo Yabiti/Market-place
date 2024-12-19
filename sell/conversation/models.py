@@ -5,4 +5,4 @@ from item.models import Item
 
 class conversation(models.Model):
     item = models.ForeignKey(Item, related_name='conversation', on_delete=models.CASCADE)
-    members = models.ManyToManyField()
+    members = models.ManyToManyField(User, related_name='conversation')
