@@ -30,3 +30,11 @@ def new_conversation(request, item_pk):
             conversation_message.conversation = conversation
             conversation_message.created_by = request.user
             conversation_message.save()
+
+            return redirect('item:detail', pk=item_pk)
+        else:
+            form = conversationmessageForm()
+
+        return render(request, 'conversation/new.html',{
+            'form': form
+        })
