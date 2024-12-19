@@ -13,8 +13,11 @@
         </form>
         <p>Category</p>
         <ul>
+            <li>
             {% for category in categories %}
+            <a href="{% url 'item:items' %}"?query={{query}}& category="{{category.id }}>{{category.name }}"></a>
             {% endfor %}
+            </li>
         </ul>
     </div>
 
