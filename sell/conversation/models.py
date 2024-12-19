@@ -16,3 +16,4 @@ class conversation(models.Model):
 
 class conversationmessage(models.Model):
     conversation = models.ForeignKey(conversation, related_name="conversation", on_delete=models.CASCADE)
+    content = models.TextField()
