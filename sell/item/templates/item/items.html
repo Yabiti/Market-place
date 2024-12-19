@@ -8,7 +8,9 @@
 
 <h2 class="new">Newest Items</h2>
     <div class="search-container">
-        <input id="searchInput" name="query" type="text" placeholder="Search or enter web address" onkeypress="searchKeyPress(event)">
+        <form method="get" action="{% url 'item:items' %}">
+            <input id="searchInput" name="query" type="text" value="{{query}}" placeholder="Search or enter web address" onkeypress="searchKeyPress(event)">
+        </form>
     </div>
 
     <script type="text/javascript">
