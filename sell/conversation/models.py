@@ -9,3 +9,6 @@ class conversation(models.Model):
     members = models.ManyToManyField(User, related_name='conversation')
     created_at = models.DateTimeField(auto_now_add=True)
     modified_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ("-modified_at")
