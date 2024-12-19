@@ -16,3 +16,17 @@ def new_conversation(request, item_pk):
 
     if conversations:
         pass
+
+    if request.method == 'POST':
+        form = conversationmessageForm(request.POST)
+
+        if form.is_valid():
+            conversation = conversation.objects.create(item=item)
+            conversation.members.add(request.user)
+            conversation.members.add(item.created_by)
+            conversation.save()
+
+            conversation_message = form.save(commit=False)
+            conversation_message.conversation = conversation
+            conversation_message.created_by = request.user
+            conversation_message.save()
