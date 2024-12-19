@@ -12,3 +12,7 @@ class conversation(models.Model):
 
     class Meta:
         ordering = ("-modified_at")
+
+
+class conversationmessage(models.Model):
+    
