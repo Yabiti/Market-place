@@ -22,7 +22,7 @@ def new_conversation(request, item_pk):
         form = ConversationMessageForm(request.POST)
 
         if form.is_valid():
-            conversation = conversation.objects.create(item=item)
+            conversation = Conversation.objects.create(item=item)
             conversation.members.add(request.user)
             conversation.members.add(item.created_by)
             conversation.save()
