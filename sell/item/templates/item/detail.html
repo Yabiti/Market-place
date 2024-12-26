@@ -29,7 +29,7 @@
     <a href="{% url 'item:edit' item.id %}">Edit</a>
     <a href="{% url 'item:delete' item.id %}">Delete</a>
     {% else %}
-    <a href="#">Contact Seller</a>
+    <a href="{% url 'conversation:new' item.id %}">Contact Seller</a>
 </div>
 {% endif %}
 
