@@ -1,13 +1,11 @@
 {% extends 'core/base.html' %}
 
-{% block title %} New conversation {% endblock%}
+{% block title %} New conversation {% endblock %}
 
 {% block body %}
 <h1>New conversation</h1>
-<form method="post" action=".">
+<form id="conversation-form" method="post" action=".">
     {% csrf_token %}
-
-    
     {{ form.as_p }}
     
     {% if form.errors or form.non_field_errors %}
@@ -16,6 +14,12 @@
         {% endfor %}
         {{ form.non_field_errors }}
     {% endif %}
-    <button type="submit" class="bottone">Send</button>
+    <a href="#" id="submit-button" class="bottone">Send</a>
 </form>
+
+<script>
+    document.getElementById('submit-button').addEventListener('click', function() {
+        document.getElementById('conversation-form').submit();
+    });
+</script>
 {% endblock %}
