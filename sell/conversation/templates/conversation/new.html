@@ -7,19 +7,25 @@
 <form id="conversation-form" method="post" action=".">
     {% csrf_token %}
     {{ form.as_p }}
-    
+
     {% if form.errors or form.non_field_errors %}
         {% for field in form %}
             {{ field.errors }}
         {% endfor %}
         {{ form.non_field_errors }}
     {% endif %}
-    <a href="#" id="submit-button" class="bottone">Send</a>
+    <a href="#" id="submit-button" class="bottone" data-item-id="{{ item.id }}">Send</a>
 </form>
 
 <script>
-    document.getElementById('submit-button').addEventListener('click', function() {
-        document.getElementById('conversation-form').submit();
+    document.getElementById('submit-button').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+        const itemId = event.target.getAttribute('data-item-id');
+        const formAction = `/inbox/new/${itemId}/`; // Correctly construct URL with item_pk
+        const form = document.getElementById('conversation-form');
+        form.action = formAction;
+        form.submit();
     });
 </script>
 {% endblock %}
+
