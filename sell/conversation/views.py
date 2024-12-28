@@ -40,3 +40,4 @@ def new_conversation(request, item_pk):
 @login_required
 
 def inbox(request):
+        conversations = Conversation.objects.filter(members__in=[request.user.id])
