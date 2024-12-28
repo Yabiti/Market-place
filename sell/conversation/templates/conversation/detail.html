@@ -1,0 +1,27 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+<link href="{% static 'core/styles.css' %}" rel="stylesheet">
+
+{% block title %} New Conversation{% endblock %}
+
+{% block body %}
+<h1>New conversation</h1>
+<div class="glue">
+    {% for conversation in conversations %}
+    <a href="#">
+        <div class="gla">
+            <img src="{{conversation.item.image.url}}">
+        </div>
+        <div class="gli">
+            {% for member in conversation.members.all %}
+            {% if members != request.user %}
+                <p><strong>{{member.username}}</strong> | {{conversation.modified_at}}</p>
+                <p>{{conversation.item.name}}</p>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </a>
+    {% endfor %}
+</div>
+{% endblock %}
