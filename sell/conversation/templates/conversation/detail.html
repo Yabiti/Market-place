@@ -8,20 +8,9 @@
 {% block body %}
 <h1>Conversation</h1>
 <div class="glue">
-    {% for conversation in conversations %}
-    <a href="#">
+    {% for message in conversation.message.all %}
         <div class="gla">
-            <img src="{{conversation.item.image.url}}">
         </div>
-        <div class="gli">
-            {% for member in conversation.members.all %}
-            {% if members != request.user %}
-                <p><strong>{{member.username}}</strong> | {{conversation.modified_at}}</p>
-                <p>{{conversation.item.name}}</p>
-            {% endif %}
-            {% endfor %}
-        </div>
-    </a>
     {% endfor %}
 </div>
 {% endblock %}
