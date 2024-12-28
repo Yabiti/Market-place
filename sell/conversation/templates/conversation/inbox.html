@@ -15,6 +15,9 @@
         </div>
         <div class="gli">
             {% for member in conversation.members.all %}
+            {% if members != request.user %}
+                <p><strong>{{member.username}}</strong> | {{conversation.modified_at}}</p>
+            {% endif %}
             {% endfor %}
         </div>
     </a>
