@@ -11,6 +11,7 @@
     {% for message in conversation.message.all %}
         <div class="gla">
             <p><strong>{{message.created_by.username}} @ {{message.created_at}}</strong></p>
+            <p>{{ message.content }}</p>
         </div>
     {% endfor %}
 </div>
