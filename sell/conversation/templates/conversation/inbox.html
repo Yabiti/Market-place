@@ -9,6 +9,11 @@
 <h1>New conversation</h1>
 <div class="glue">
     {% for conversation in conversations %}
+    <a href="#">
+        <div class="gla">
+            <img src="{{conversation.item.image.url}}">
+        </div>
+    </a>
     {% endfor %}
 </div>
 {% endblock %}
