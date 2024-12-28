@@ -8,11 +8,20 @@
 {% block body %}
 <h1>Conversation</h1>
 <div class="glue">
-    {% for message in conversation.message.all %}
-        <div class="gla">
+    {% for message in conversation.messages.all %}
+        <div class="gla{% if message.created_by == request.user %} {% else %} {% endif %}">
             <p><strong>{{message.created_by.username}} @ {{message.created_at}}</strong></p>
             <p>{{ message.content }}</p>
         </div>
     {% endfor %}
 </div>
+
+<form method="post" action=",">
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <button type="submit" class="bottone">Send</button>
+
+</form>
 {% endblock %}
