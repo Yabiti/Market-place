@@ -17,6 +17,7 @@
             {% for member in conversation.members.all %}
             {% if members != request.user %}
                 <p><strong>{{member.username}}</strong> | {{conversation.modified_at}}</p>
+                <p>{{conversation.item.name}}</p>
             {% endif %}
             {% endfor %}
         </div>
