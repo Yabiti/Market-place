@@ -1,7 +1,7 @@
 {% extends 'core/base.html' %}
 
 {% load static %}
-<link href="{% static 'core/styles.css' %}" rel="stylesheet">
+<link href="{% static 'core/yab.css' %}" rel="stylesheet">
 
 {% block title %}Conversation{% endblock %}
 
@@ -9,14 +9,14 @@
 <h1>Conversation</h1>
 <div class="glue">
     {% for message in conversation.messages.all %}
-        <div class="gla{% if message.created_by == request.user %} {% else %} {% endif %}">
-            <p><strong>{{message.created_by.username}} @ {{message.created_at}}</strong></p>
+        <div class="{% if message.created_by == request.user %}gla-self{% else %}gla-other{% endif %}">
+            <p><strong>{{ message.created_by.username }} @ {{ message.created_at }}</strong></p>
             <p>{{ message.content }}</p>
         </div>
     {% endfor %}
 </div>
 
-<form method="post" action=",">
+<form method="post" action=".">
     {% csrf_token %}
 
     {{ form.as_p }}

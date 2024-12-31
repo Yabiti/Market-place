@@ -48,7 +48,7 @@ def inbox(request):
 @login_required
 def detail(request, pk):
     conversation = Conversation.objects.filter(members__in=[request.user.id]).get(pk=pk)
-    form = ConversationMessageForm()  # Initialize the form for GET requests or when form is not valid
+    form = ConversationMessageForm()
 
     if request.method == 'POST':
         form = ConversationMessageForm(request.POST)
@@ -61,7 +61,8 @@ def detail(request, pk):
             conversation.save()
 
             return redirect("conversation:detail", pk=pk)
-
+    else:
+        form = ConversationMessageForm()
     return render(request, 'conversation/detail.html', {
          'conversation': conversation,
          'form': form,
