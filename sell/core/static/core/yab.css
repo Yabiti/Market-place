@@ -1,49 +1,58 @@
-/* Base styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
 }
 
-/* Header styles */
-.header {
+.site-header nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    padding: 10px 20px;
-    border-bottom: 1px solid #ccc;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #333;
 }
 
-/* Brand/Title styles */
-.header h1 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
-}
-
-/* Navigation container */
-.nav-container {
-    display: flex;
-    align-items: center;
-}
-
-/* Navigation links */
-.nav-container nav {
-    display: flex;
-    gap: 15px;
-}
-
-.nav-link {
+.site-header nav a {
+    color: white;
     text-decoration: none;
-    color: #000;
-    font-size: 16px;
 }
 
-.nav-link:hover {
-    color: #007bff;
+.banner {
+    text-align: center;
+    padding: 50px;
+    background: #f4f4f4;
 }
+
+.new {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.py {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+}
+
+.price {
+    text-align: center;
+}
+
+.price h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
 
 /* Auth container */
 .auth-container {
