@@ -97,24 +97,6 @@ body {
     padding: 5px 10px;
     border-radius: 5px;
 }
-
-/* Image container */
-
-/* Price container */
-.price {
-    padding: 15px;
-}
-
-.price h2 {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.price p {
-    font-size: 16px;
-    color: #007bff;
-}
-
 /* Core Styles */
 body {
     font-family: 'Arial', sans-serif;
@@ -135,9 +117,10 @@ h2.new {
 .items-grid, .categories-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px; /* Set gap between items */
-    margin: 20px;
-    padding: 0; /* Ensure there's no additional padding that might conflict */
+    gap: 50px; /* Set gap between items */
+    margin: 0 auto; /* Center the grid and remove left margin */
+    padding: 0;
+    max-width: 1200px; /* Set a max-width for the grid */
 }
 
 .item-card, .category-card {
@@ -146,7 +129,7 @@ h2.new {
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
-    padding: 0; /* Ensure no padding within the cards themselves */
+    margin-bottom: 20px; /* Add gap between the cards */
 }
 
 .item-card:hover, .category-card:hover {
@@ -158,6 +141,7 @@ h2.new {
     width: 100%; /* Make sure the image container takes the full width */
     height: 300px; /* Set the height to 300px */
     overflow: hidden;
+    margin-bottom: 10px; /* Add space below the image container */
 }
 
 .item-img {
@@ -183,12 +167,6 @@ h2.new {
     margin-top: 5px;
 }
 
-/* Ensure proper gap between the cards */
-.items-grid > .item-card,
-.categories-grid > .category-card {
-    margin-bottom: 20px;
-}
-
 /* Links */
 a {
     text-decoration: none;
@@ -199,6 +177,30 @@ a:hover {
     text-decoration: underline;
 }
 
+
+/* Price container */
+.price {
+    padding: 15px;
+}
+
+.price h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.price p {
+    font-size: 16px;
+    color: #007bff;
+}
+
+
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
 /* Navbar styles */
 .navbar {
