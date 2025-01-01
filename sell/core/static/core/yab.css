@@ -60,6 +60,36 @@ body {
     border-radius: 5px;
 }
 
+.img {
+    width: calc(33.333% - 20px); /* Adjust width for three images per row with space */
+    height: auto;
+    overflow: hidden;
+    margin: 10px; /* Added margin for spacing between items */
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for the images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a raised effect */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.py {
+    margin: 20px; /* Increased gap between items */
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Increased gap between grid items */
+}
+
 .login-link {
     text-decoration: none;
     color: #fff;
