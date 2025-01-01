@@ -98,77 +98,9 @@ body {
     border-radius: 5px;
 }
 
-/* Styles for Newest Items */
-.new {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-/* Grid container */
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 200px;
-    justify-content: center;
-}
-
-/* Styles for Newest Items */
-.new {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-/* Grid container */
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-/* Individual item container */
-.py {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    width: calc(33.33% - 20px); /* Adjust width to fit three items per row */
-    max-width: 300px; /* Increase the max-width for larger items */
-    text-align: center;
-    margin-bottom: 20px; /* Add bottom margin to separate rows */
-}
-
-/* Hover effect for item container */
-.py:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
 /* Image container */
-.img {
-    width: 100%;
-    height: 250px; /* Increase height for bigger images */
-    overflow: hidden;
-    position: relative;
-}
 
-/* Image styling */
-.img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
 
-/* Hover effect for image */
-.img img:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-}
 
 /* Price container */
 .price {
@@ -186,13 +118,6 @@ body {
 }
 
 
-/* Base styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
 
 /* Navbar styles */
 .navbar {
