@@ -52,61 +52,6 @@ body {
     margin-left: 20px;
 }
 
-body {
-    font-family: Arial, sans-serif;
-}
-
-.site-header nav {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    background-color: #333;
-}
-
-.site-header nav a {
-    color: white;
-    text-decoration: none;
-}
-
-.banner {
-    text-align: center;
-    padding: 50px;
-    background: #f4f4f4;
-}
-
-.new {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.py {
-    border: 1px solid #ddd;
-    margin: 10px;
-    padding: 10px;
-    width: 30%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.img img {
-    width: 100%;
-    height: auto;
-}
-
-.price {
-    text-align: center;
-}
-
-.price h2 {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
 .signup-link {
     text-decoration: none;
     color: #fff;
