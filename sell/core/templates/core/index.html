@@ -1,19 +1,19 @@
 {% extends 'core/base.html' %}
 {% load static %}
 
-<llnk href="{% static  'core/yab.css' %}" rel="stylesheet">
+<link href="{% static 'core/yab.css' %}" rel="stylesheet">
 
 {% block title %} welcome {% endblock %}
 {% block body %}
     <h2 class="new">Newest Items</h2>
-    <div class="grid">
-        {% for item in items%}
-        <div class="py">
+    <div class="items-grid">
+        {% for item in items %}
+        <div class="item-card">
             <a href="{% url 'item:detail' item.id %}">
-                <div class="img">
-                    <img src="{{item.image.url}}">
+                <div class="item-img-container">
+                    <img src="{{item.image.url}}" class="item-img">
                 </div>
-                <div class="price">
+                <div class="item-info">
                     <h2>{{item.name}}</h2>
                     <p>Price: {{item.price}}</p>
                 </div>
@@ -22,16 +22,16 @@
         {% endfor %}
     </div>
     <h2 class="new">Categories</h2>
-<div class="grid">
-    {% for category in categories %}
-    <div class="py">
-        <a href="#">
-            <div class="price">
-                <h2>{{ category.name }}</h2>
-                <p>{{ category.items.count }} items</p>
-            </div>
-        </a>
+    <div class="categories-grid">
+        {% for category in categories %}
+        <div class="category-card">
+            <a href="#">
+                <div class="category-info">
+                    <h2>{{ category.name }}</h2>
+                    <p>{{ category.items.count }} items</p>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
     </div>
-    {% endfor %}
-</div>
 {% endblock %}
