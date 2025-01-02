@@ -33,3 +33,6 @@ def signup(request):
 
 def about(request):
     return render(request, 'core/about.html')
+
+def privacy(request):
+    return render(request, 'core/privacy.html')
