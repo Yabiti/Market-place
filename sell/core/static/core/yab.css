@@ -773,4 +773,54 @@ button.delete-button {
   .footer-menu ul li a:hover {
     text-decoration: underline;
   }
-  
+
+.about-us-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.mission-section, .story-section, .team-section, .values-section {
+    margin-bottom: 30px;
+}
+
+.team-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.team-member {
+    text-align: center;
+    flex: 1 1 200px;
+}
+
+.team-member img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.values-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.values-section li {
+    background-color: #e1e1e1;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
