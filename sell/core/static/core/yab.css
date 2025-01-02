@@ -657,25 +657,7 @@ button.delete-button {
     box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
 }
 
-.category-list ul {
-    display: block;
-    list-style-type: none; /* Removes the default bullets */
-    padding: 10px;
-}
 
-.category-list li {
-    display: block;
-    margin-bottom: 10px; /* Optional: Adds spacing between list items */
-}
-
-.category-list li a {
-    color: black; /* Makes the text color black */
-    text-decoration: none; /* Optional: Removes underline from links */
-}
-
-.category-list li a:hover {
-    text-decoration: underline; /* Optional: Adds underline on hover */
-}
 
 .clear-box {
     background-color: green !important;
@@ -695,3 +677,37 @@ button.delete-button {
 .clear-box a:hover {
     text-decoration: underline !important;
 }
+
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .footer-about, .footer-menu {
+    flex: 1;
+  }
+  
+  .footer-menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-menu ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-menu ul li a {
+    color: #1abc9c;
+    text-decoration: none;
+  }
+  
+  .footer-menu ul li a:hover {
+    text-decoration: underline;
+  }
+  

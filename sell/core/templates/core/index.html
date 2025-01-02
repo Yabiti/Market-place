@@ -29,10 +29,27 @@
                 <div class="category-info">
                     <h2>{{ category.name }}</h2>
                     <p>{{ category.items.count }} items</p>
-                    <p>item</p>
                 </div>
             </a>
         </div>
         {% endfor %}
     </div>    
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-about">
+            <h4>About</h4>
+            <p>Lorem ipsum bla bla bla. Lorem ipsum bla bla bla.</p>
+          </div>
+          <div class="footer-menu">
+            <h4>Menu</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="{url 'item:contact'}">Contact</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Terms of use</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      
 {% endblock %}
