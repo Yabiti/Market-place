@@ -678,6 +678,62 @@ button.delete-button {
     text-decoration: underline !important;
 }
 
+
+
+/* Container to hold categories side by side */
+.categorien-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* General categorien styling */
+.categorien {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: #f9f9f9;
+    flex: 1 1 30%; /* Adjusts the width and flexibility */
+}
+
+/* Link styling */
+.categorien a {
+    text-decoration: none;
+    color: inherit;
+    flex-grow: 1;
+}
+
+/* categories-info styling */
+.categories-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* categorien hover effect */
+.categorien:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Category title styling */
+.categories-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Item count styling */
+.categories-info p {
+    font-size: 1em;
+    color: #666;
+}
+
+
 .footer {
     background-color: #2c3e50;
     color: white;

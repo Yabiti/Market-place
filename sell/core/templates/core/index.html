@@ -21,19 +21,18 @@
         </div>
         {% endfor %}
     </div>
-    <h2 class="new">Categories</h2>
-    <div class="categories-grid">
+        <h2 class="new"> Categories</h2>
         {% for category in categories %}
-        <div class="category-card">
+        <div class="categorien">
             <a href="#">
-                <div class="category-info">
+                <div class="categories-info">
                     <h2>{{ category.name }}</h2>
                     <p>{{ category.items.count }} items</p>
                 </div>
             </a>
         </div>
         {% endfor %}
-    </div>    
+
     <footer class="footer">
         <div class="footer-container">
           <div class="footer-about">
@@ -51,5 +50,4 @@
           </div>
         </div>
       </footer>
-      
 {% endblock %}
