@@ -83,15 +83,7 @@ Visit [http://127.0.0.1:8000](http://127.0.0.1:8000) to explore your website �
 
 ---
 
-## 📸 **Screenshots**
 
-1️⃣ **Dashboard Management**  
-   ![Dashboard Screenshot](https://via.placeholder.com/800x400)
-
-2️⃣ **Product Listings**  
-   ![Product Page Screenshot](https://via.placeholder.com/800x400)
-
----
 
 ## 🎯 **Future Enhancements**
 
