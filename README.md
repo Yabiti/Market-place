@@ -2,7 +2,7 @@
 
 # 🛍️ **Django Marketplace Website**
 
-🎯 A dynamic and scalable online marketplace built with **Django**, **HTML**, and **CSS**, designed to facilitate seamless buying and selling of products like hoodies 🧥, PlayStation 🎮, beverages 🍺, and more!
+🎯 A dynamic and scalable online marketplace built with **Django**, **HTML**, and **CSS**, designed to facilitate seamless buying and selling of products like hoodies 🧥, PlayStation 🎮, and more!
 
 ---
 
